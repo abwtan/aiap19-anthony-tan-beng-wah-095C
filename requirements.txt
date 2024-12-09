@@ -1,0 +1,7 @@
+numpy
+matplotlib.pyplot
+sklearn
+sqlite3
+requests
+os
+joblib
