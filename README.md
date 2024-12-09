@@ -33,3 +33,5 @@ Approaches to the Problem Statement:
 14. On finding the best estimator for Random Forest hyperparameters, I used GridSearchCV to find out the best estimators.
 15. After using the best hyperparameters, I created the final models and then pipeline for each model.
 16. I did a prediction test at the end to check and ensure the final models are producing the close to expected predicted temperature values.
+17. MLP neural network is chosen because of its ability to model and solve complex, non-linear relationships between input and output data.
+18. Random Forest is chosen because of its robustness and ability to handle a wide variety of data types and tasks while reducing overfitting.
