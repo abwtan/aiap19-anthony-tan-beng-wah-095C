@@ -20,7 +20,7 @@ Approaches to the Problem Statement:
 1. After retrieving the farm_data from the database and loading them into a dataframe agri, I noticed there were some issues with the data.
 2. There were null values in 7 feature columns as well as the "ppm" in some of the rows for Nutrient N, P and K columns.
 3. I removed the "ppm" from these 3 columns first and then converted them into float datatype.
-4. I replaced all null values with the median value for each column.  After doing this, there is no more null values in all the columns.
+4. I replaced all null values with the median value for each column.  After doing this, there are no more null values in all the columns.
 5. There was also an issue with Plant Type and Plant Stage data, some were in upper case and some in lower case. As such, I converted all of them to lower case. This is to ensure consistency in the data used in analysis and predictions.
 6. Now the cleansed data are ready for EDA.
 7. The first analysis is to analyse and compare the environmental and nutrient requirements for all zones ie. Zones A to G. Doing such could help AgroTech Innovations to know the different requirements in each zone.
