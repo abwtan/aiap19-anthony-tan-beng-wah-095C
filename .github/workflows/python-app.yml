@@ -1,1 +1,23 @@
-
+ name: Python application
+ on:
+   push:
+     branches: [ main ]
+   pull_request:
+     branches: [ main ]
+ jobs:
+   build:
+     runs-on: ubuntu-latest
+     
+     steps:
+     - uses: actions/checkout@v3
+     - name: Set up Python 3.8
+       uses: actions/setup-python@v4
+       with:
+         python-version: 3.8
+     - name: Install dependencies
+       run: | 
+         python -m pip install --upgrade pip
+         pip install -r requirements.txt
+     - name: Run the script
+       run: |
+         python model2_rf.py
